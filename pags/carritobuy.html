@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D de Donuts</title>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Titillium+Web:400,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- icono -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("body").hide().fadeIn(1000);
+      });
+    </script>
+
+</head>
+<body>
+    <!-- MENU -->
+    <!-- <nav class="menu">
+        <a href="index.html" class="log fa-spin" ><img src="img/logo.png" alt=""></a>
+    <div class="menu-der">
+
+        <a href="#quienes-somos"><span class="btn btn1">Nosotros</span></a>
+        <a href="#productos"><span class="btn btn2">Productos</span></a>
+        <a href="#contacto"><span class="btn btn3">Contacto</span></a>
+        <a href="#encuentranos"><span class="btn btn4">Buscanos</span></a>
+        <a href="galeria.html"><span class="btn btn4">Galería</span></a>
+
+
+    </div>
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="buton far fa-user usu"></i></button>
+    <a href="carrito.html"><img class="shop" src="img/shop/shop.png" alt=""></a>
+
+      
+
+</nav> -->
+
+         <!-- LOGIN -->
+         <!-- <div id="id01" class="modal">
+
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <i class="fas fa-user-tie"></i>
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="email" name="uname" required>
+              
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input class="inputt" type="password" placeholder="contraseña" name="psw" required>
+                      
+                    <button type="submit">Login</button>
+                    <label class="etiqueta">
+                      <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none',
+                                                   document.getElementById('id02').style.display='block'" class="cancelbtn reg">Registrate</button>
+                    
+                    <span class="psw">Has olvidado la <a href="#">contraseña?</a></span>
+                  </div>
+                </form>
+              </div> -->
+    
+    <!-- REGISTER -->
+    
+              <!-- <div id="id02" class="modal">
+      
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <i class="fas fa-sign-in-alt"></i>
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Nombre</b></label>
+                    <input type="text" placeholder="Introduce nombre" name="uname" required>
+    
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Introduce email" name="uname" required>
+              
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input class="inputt" type="password" placeholder="Introduce una contraseña" name="psw" required>
+                    
+                    <label for="psw"><b>Repite Contraseña</b></label>
+                    <input class="inputt" type="password" placeholder="Repite la contraseña" name="psw" required>
+                      
+                    <button type="submit">Login</button>
+                    <label class="etiqueta">
+                      <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+                   
+                    
+                    <span class="psw">Has olvidado la <a href="#">contraseña?</a></span>
+                  </div>
+                </form>
+              </div> -->
+    
+              <!-- buy -->
+              <div class="filas">
+                  <div class="contenedor-75">
+                    <div class="contenedor">
+                      <form action="/action_page.php">
+                      
+                        <div class="filas">
+                          <div class="contenedor-50">
+                            <h3>Billing Address</h3>
+                            <label class="label-class" for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input class="input-class" type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label class="label-class" for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input class="input-class" type="text" id="email" name="email" placeholder="john@example.com">
+                            <label class="label-class" for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input class="input-class" type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label class="label-class" for="city"><i class="fa fa-institution"></i> City</label>
+                            <input class="input-class" type="text" id="city" name="city" placeholder="New York">
+                
+                            <div class="filas">
+                              <div class="contenedor-50">
+                                <label class="label-class" for="state">State</label>
+                                <input class="input-class" type="text" id="state" name="state" placeholder="NY">
+                              </div>
+                              <div class="contenedor-50">
+                                <label class="label-class" for="zip">Zip</label>
+                                <input class="input-class" type="text" id="zip" name="zip" placeholder="10001">
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="contenedor-50">
+                            <h3>Payment</h3>
+                            <label class="label-class" for="fname">Accepted Cards</label>
+                            <div class="icon-contenedor">
+                              <i class="fa fa-cc-visa" style="color:navy;"></i>
+                              <i class="fa fa-cc-amex" style="color:blue;"></i>
+                              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                              <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label class="label-class" for="cname">Name on Card</label>
+                            <input class="input-class" type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label class="label-class" for="ccnum">Credit card number</label>
+                            <input class="input-class" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label class="label-class" for="expmonth">Exp Month</label>
+                            <input class="input-class" type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <div class="filas">
+                              <div class="contenedor-50">
+                                <label for="expyear">Exp Year</label>
+                                <input class="input-class" type="text" id="expyear" name="expyear" placeholder="2018">
+                              </div>
+                              <div class="contenedor-50">
+                                <label class="label-class" for="cvv">CVV</label>
+                                <input class="input-class" type="text" id="cvv" name="cvv" placeholder="352">
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <label class="label-class">
+                          <input class="input-class" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <input class="input-class" type="submit" value="Continue to checkout" class="btn">
+                      </form>
+                    </div>
+                  </div>
+                  <div class="contenedor-25">
+                    <div class="contenedor">
+                      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                      <hr>
+                      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <style>
+                    body {
+                      font-family: Arial;
+                      font-size: 17px;
+                      padding: 8px;
+                    }
+                    
+                    * {
+                      box-sizing: border-box;
+                    }
+                    
+                    .filas {
+                      display: -ms-flexbox; /* IE10 */
+                      display: flex;
+                      -ms-flex-wrap: wrap; /* IE10 */
+                      flex-wrap: wrap;
+                      margin: 0 -16px;
+                    }
+                    
+                    .contenedor-25 {
+                      -ms-flex: 25%; /* IE10 */
+                      flex: 25%;
+                    }
+                    
+                    .contenedor-50 {
+                      -ms-flex: 50%; /* IE10 */
+                      flex: 50%;
+                    }
+                    
+                    .contenedor-75 {
+                      -ms-flex: 75%; /* IE10 */
+                      flex: 75%;
+                    }
+                    
+                    .contenedor-25,
+                    .contenedor-50,
+                    .contenedor-75 {
+                      padding: 0 16px;
+                    }
+                    
+                    .contenedor {
+                      background-color: #f2f2f2;
+                      padding: 5px 20px 15px 20px;
+                      border: 1px solid lightgrey;
+                      border-radius: 3px;
+                    }
+                    
+                    .input-class[type=text] {
+                      width: 100%;
+                      margin-bottom: 20px;
+                      padding: 12px;
+                      border: 1px solid #ccc;
+                      border-radius: 3px;
+                    }
+                    
+                    .label-class {
+                      margin-bottom: 10px;
+                      display: block;
+                    }
+                    
+                    .icon-contenedor {
+                      margin-bottom: 20px;
+                      padding: 7px 0;
+                      font-size: 24px;
+                    }
+                    
+                    .btn {
+                      background-color: #4CAF50;
+                      color: white;
+                      padding: 12px;
+                      margin: 10px 0;
+                      border: none;
+                      width: 100%;
+                      border-radius: 3px;
+                      cursor: pointer;
+                      font-size: 17px;
+                    }
+                    
+                    .btn:hover {
+                      background-color: #45a049;
+                    }
+                    
+                    a {
+                      color: #2196F3;
+                    }
+                    
+                    hr {
+                      border: 1px solid lightgrey;
+                    }
+                    
+                    span.price {
+                      float: right;
+                      color: grey;
+                    }
+                    
+                    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+                    @media (max-width: 800px) {
+                      .filas {
+                        flex-direction: column-reverse;
+                      }
+                      .contenedor-25 {
+                        margin-bottom: 20px;
+                      }
+                    }
+                    </style>
+
+</style>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D de Donuts</title>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Titillium+Web:400,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- icono -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <!-- javascrip -->
+        <script src="js/main.js"></script>
+
+        <!-- carrousel -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("body").hide().fadeIn(1000);
+      });
+    </script>
+    </head>
+    <body >
+ <!-- MENU -->
+ <nav class="menu">
+  <a href="../index.html" class="log fa-spin" ><img src="../img/logo.png" alt=""></a>
+<div class="menu-der">
+
+  <a href="#quienes-somos"><span class="btn btn1">Nosotros</span></a>
+  <a href="#productos"><span class="btn btn2">Productos</span></a>
+  <a href="#contacto"><span class="btn btn3">Contacto</span></a>
+  <a href="#encuentranos"><span class="btn btn4">Buscanos</span></a>
+  
+
+</div>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="buton far fa-user usu"></i></button>
+<img class="shop" src="../img/shop/shop.png" alt="">
+
+
+
+</nav>
+       <!-- LOGIN -->
+       <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <i class="fas fa-user-tie"></i>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Email</b></label>
+            <input  type="text" placeholder="email" name="uname" required>
+      
+            <label for="psw"><b>Contraseña</b></label>
+            <input  class="inputt" type="password" placeholder="contraseña" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label class="etiqueta">
+              <input type="checkbox" checked="checked" name="remember"> Recuerdame
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none',
+                                           document.getElementById('id02').style.display='block'" class="cancelbtn reg">Registrate</button>
+            
+            <span class="psw">Has olvidado la <a href="#">contraseña?</a></span>
+          </div>
+        </form>
+      </div>
+
+<!-- REGISTER -->
+
+      <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <i class="fas fa-sign-in-alt"></i>
+            <h1>Registrate</h1>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Nombre</b></label>
+            <input type="text" placeholder="Introduce nombre" name="uname" required>
+
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="Introduce email" name="uname" required>
+      
+            <label for="psw"><b>Contraseña</b></label>
+            <input class="inputt" type="password" placeholder="Introduce una contraseña" name="psw" required>
+            
+            <label for="psw"><b>Repite Contraseña</b></label>
+            <input class="inputt" type="password" placeholder="Repite la contraseña" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label class="etiqueta">
+              <input type="checkbox" checked="checked" name="remember"> Recuerdame
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+           
+            
+            <span class="psw">Has olvidado la <a href="#">contraseña?</a></span>
+          </div>
+        </form>
+      </div>
+
+<!-- CARROUSEL -->
+
+<!-- PRODUCTOS -->
+    <div class="container  mt-10">
+    <div class="row productos">
+        <article id="productos" class="col-12 text-center">
+                <h3 class="titulo text-center">~Productos~</h3>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, animi repudiandae? Itaque maiores doloremque placeat dignissimos provident labore error. Quam nesciunt molestias commodi cum delectus reiciendis numquam, ipsa nobis repellat!</p> -->
+        </article>
+
+        <div class="col-12 justify-content-center">
+            <div class="row justify-content-center">
+
+                <article class="col-12 col-lg-3 py-1">
+                    <figure class="producto">
+                        <img src="../img/productos/salados.png" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <a href="productos/salados.html" class="overlay-texto">Salados</a>
+                            </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-12 col-lg-3 py-1">
+                    <figure class="producto">
+                        <img src="../img/productos/bolleria.png" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <a href="productos/bolleria.html"><p class="overlay-texto">Bollería</p></a>
+                            </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-12 col-lg-3 py-1">
+                    <figure class="producto">
+                        <img src="../img/productos/donuts.png" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <a href="productos/donuts.html"><p class="overlay-texto">Donuts</p></a>
+                            </figcaption>
+                    </figure>
+                </article>
+
+                 
+            </div>
+            <div class="row justify-content-center">   
+                <article class="col-12 col-lg-3 py-1">
+                    <figure class="producto">
+                        <img src="../img/productos/donuts-especiales.png" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <a href="productos/donuts-especiales.html"><p class="overlay-texto">Donuts® Especiales</p></a>
+                            </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-12 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="../img/productos/bebidas.png" class="img-fluid" alt="">
+                                <figcaption class="overlay">
+                                    <a href="productos/bebidas.html"><p class="overlay-texto">Bebidas</p></a>
+                                </figcaption>
+                        </figure>
+                </article>
+
+                <article class="col-12 col-lg-3 py-1">
+                    <figure class="producto">
+                        <img src="../img/productos/bebidas-calientes.png" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <a href="productos/bebidas-calientes.html"><p class="overlay-texto">Bebidas Calientes</p></a>
+                            </figcaption>
+                    </figure>
+                </article>
+                 
+            </div>
+
+
+            <div class="row justify-content-center">   
+                    <article class="col-12 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="../img/productos/tostadas.jpg" class="img-fluid" alt="">
+                                <figcaption class="overlay">
+                                    <a href="productos/tostadas.html"><p class="overlay-texto">Tostadas</p></a>
+                                </figcaption>
+                        </figure>
+                    </article>
+    
+                    <article class="col-12 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="../img/productos/roscas.jpg" class="img-fluid" alt="">
+                                    <figcaption class="overlay">
+                                        <a href="productos/roscas.html"><p class="overlay-texto">Roscas</p></a>
+                                    </figcaption>
+                            </figure>
+                    </article>
+    
+                    <article class="col-12 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="../img/productos/bolitas.jpg" class="img-fluid" alt="">
+                                <figcaption class="overlay">
+                                    <a href="productos/bolitas.html"><p class="overlay-texto">Bolitas</p></a>
+                                </figcaption>
+                        </figure>
+                    </article>
+                     
+                </div>
+
+                <!-- <div class="row justify-content-center">   
+                        <article class="col-12 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="img/productos/img13.jpg" class="img-fluid" alt="">
+                                    <figcaption class="overlay">
+                                        <p class="overlay-texto">Panes del mundo</p>
+                                    </figcaption>
+                            </figure>
+                        </article>
+        
+                        <article class="col-12 col-lg-3 py-1">
+                                <figure class="producto">
+                                    <img src="img/productos/img14.jpg" class="img-fluid" alt="">
+                                        <figcaption class="overlay">
+                                            <p class="overlay-texto">Masa madre</p>
+                                        </figcaption>
+                                </figure>
+                        </article>
+        
+                        <article class="col-12 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="img/productos/img15.jpg" class="img-fluid" alt="">
+                                    <figcaption class="overlay">
+                                        <p class="overlay-texto">Sabores y semillas</p>
+                                    </figcaption>
+                            </figure>
+                        </article>
+                         
+                    </div> -->
+            
+             
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+
+<footer class="footer-2 text-center-xs bg--white">
+    <div class="container">
+      <!--end row-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer">
+            © Copyright Abel.
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Laura
+              -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <ul class="social-list">
+            <li>
+              <a href="#"><i class="fab fa-twitter t"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google g"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram i"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!--end row-->
+    </div>
+  </footer>
+</body>
+</html>

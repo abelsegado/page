@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D de Donuts</title>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Titillium+Web:400,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- icono -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- javascrip -->
+    <script src="../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("body").hide().fadeIn(1000);
+      });
+    </script>
+
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav class="menu">
+            <a href="../index.html" class="log fa-spin" ><img src="../img/logo.png" alt=""></a>
+        <div class="menu-der">
+
+            <a href="#quienes-somos"><span class="btn btn1">Nosotros</span></a>
+            <a href="#productos"><span class="btn btn2">Productos</span></a>
+            <a href="#contacto"><span class="btn btn3">Contacto</span></a>
+            <a href="#encuentranos"><span class="btn btn4">Buscanos</span></a>
+            <a href="galeria.html"><span class="btn btn4">Galería</span></a>
+
+
+        </div>
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="buton far fa-user usu"></i></button>
+        <a href="carrito.html"><img class="shop" src="../img/shop/shop.png" alt=""></a>
+
+          
+
+    </nav>
+
+             <!-- LOGIN -->
+             <div id="id01" class="modal">
+  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <i class="fas fa-user-tie"></i>
+                      </div>
+                  
+                      <div class="container">
+                        <label for="uname"><b>Email</b></label>
+                        <input type="text" placeholder="email" name="uname" required>
+                  
+                        <label for="psw"><b>Contraseña</b></label>
+                        <input class="inputt" type="password" placeholder="contraseña" name="psw" required>
+                          
+                        <button type="submit">Login</button>
+                        <label class="etiqueta">
+                          <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                        </label>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none',
+                                                       document.getElementById('id02').style.display='block'" class="cancelbtn reg">Registrate</button>
+                        
+                        <span class="psw">Has olvidado la <a href="#">contraseña?</a></span>
+                      </div>
+                    </form>
+                  </div>
+        
+        <!-- REGISTER -->
+        
+                  <div id="id02" class="modal">
+          
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <i class="fas fa-sign-in-alt"></i>
+                      </div>
+                  
+                      <div class="container">
+                        <label for="uname"><b>Nombre</b></label>
+                        <input type="text" placeholder="Introduce nombre" name="uname" required>
+        
+                        <label for="uname"><b>Email</b></label>
+                        <input type="text" placeholder="Introduce email" name="uname" required>
+                  
+                        <label for="psw"><b>Contraseña</b></label>
+                        <input class="inputt" type="password" placeholder="Introduce una contraseña" name="psw" required>
+                        
+                        <label for="psw"><b>Repite Contraseña</b></label>
+                        <input class="inputt" type="password" placeholder="Repite la contraseña" name="psw" required>
+                          
+                        <button type="submit">Login</button>
+                        <label class="etiqueta">
+                          <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                        </label>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+                       
+                        
+                        <span class="psw">Has olvidado la <a href="#">contraseña?</a></span>
+                      </div>
+                    </form>
+                  </div>
+        
+    <!-- CARRITO -->
+    <div class="px-4 px-lg-0 carrito">
+        <!-- For demo purpose -->
+        <div class="container-fluid text-white py-2 text-center">
+            <div class="image-container">
+                <div class="text">Carrito</div>
+              </div>
+        </div>
+        <!-- End -->
+      
+        <div class="pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+      
+                <!-- Shopping cart table -->
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr class="bg-colored">
+                        <th scope="col" class="border-0">
+                          <div class="p-2 px-3 text-uppercase text-center">Producto</div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase text-center">Precio</div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase text-center">Cantidad</div>
+                        </th>
+                        <th scope="col" class="border-0 ">
+                          <div class="py-2 text-uppercase text-center">Eliminar</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="show">
+                      <!-- <tr>
+                       <th scope="row" class="border-0">
+                          <div class="p-2">
+                            <div class="mr-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Donuts de Chocolate</a></h5><span class="text-muted font-weight-normal font-italic d-block">Categoría: Donuts</span>
+                            </div>
+                            <img class="float-right cart-img" src="img/productos/donuts/PumpkinVanillaDrizzle-310x320.png" alt="" width="70" class="img-fluid rounded shadow-sm">
+
+                          </div>
+                        </th>
+                        <td class="border-0 align-middle text-center "><strong><h3>5.00 €</h3></strong></td>
+                        <td class="border-0 align-middle text-center"><strong><h3><input style="width: 50px;text-align: center;" type="number" name="" id="" value="1"></h3></strong></td>
+                        <td class="border-0 align-middle text-center"><a href="#" class="text-dark"><i style="color: var(--color6);" class="fa fa-trash fa-2x"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            <div class="p-2">
+                                <div class="mr-3 d-inline-block align-middle">
+                                  <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Muffin</a></h5><span class="text-muted font-weight-normal font-italic d-block">Categoría: Muffins</span>
+                                </div>
+                                <img class="float-right cart-img" src="img/productos/bolleria/2018_muffins.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+    
+                              </div>
+                        </th>
+                        <td class="align-middle text-center"><strong><h3>5.00 €</h3></strong></td>
+                        <td class="border-0 align-middle text-center"><strong><h3><input style="width: 50px;text-align: center;" type="number" name="" id="" value="1"></h3></strong></td>
+                        <td class="align-middle text-center"><a href="#" class="text-dark"><i style="color: var(--color6);" class="fa fa-trash fa-2x"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            <div class="p-2">
+                                <div class="mr-3 d-inline-block align-middle">
+                                  <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Café con Leche</a></h5><span class="text-muted font-weight-normal font-italic d-block">Categoría: Cafés</span>
+                                </div>
+                                <img class="float-right cart-img" src="img/productos/bebidasCalientes/CafeConLeche_NuevoVaso.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+    
+                              </div>
+                          <td class="align-middle text-center"><strong><h3>5.00 €</h3></strong></td>
+                          <td class="border-0 align-middle text-center"><strong><h3><input style="width: 50px;text-align: center;" type="number" name="" id="" value="1"></h3></strong></td>
+                          <td class="align-middle text-center"><a href="#" class="text-dark"><i style="color: var(--color6);" class="fa fa-trash fa-2x"></i></a>
+                          </td> 
+                      </tr> -->
+                    </tbody>
+                  </table>
+                </div>
+                <!-- End -->
+              </div>
+            </div>
+      
+            <div class="row py-5 p-4 bg-white rounded shadow-sm">
+
+              <div class="col-lg-12">
+                <div class="bg-colored rounded-pill px-4 py-3 text-uppercase font-weight-bold text-center">Resumen del pedido</div>
+                <div class="p-4">
+                  <p class="font-italic mb-4">Los costos de envío y adicionales se calculan en función de los valores que haya ingresado.</p>
+                  <ul class="list-unstyled mb-4">
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Subtotal de Orden</strong><strong>15.00 €</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Envío y manipulación</strong><strong>4.65 €</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">I.V.A</strong><strong>0.00 €</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                      <h5 class="font-weight-bold">19.65 €</h5>
+                    </li>
+                  </ul><a href="carritobuy.html" style="background-color: var(--color6);color: #f1f1f1;transition:0.5s" class="bot-h btn rounded-pill py-2 btn-block font-weight-bold">Pasar Por Caja</a>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      
+<!-- FOOTER -->
+
+
+
+
+<footer class="footer-2 text-center-xs bg--white">
+        <div class="container">
+          <!--end row-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="footer">
+                <div class="letra">
+                    © Copyright Abel.
+                </div>
+                
+                <div class="credits">
+                  <!--
+                    All the links in the footer should remain intact. 
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Laura
+                  -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 text-right">
+              <ul class="social-list uls">
+                <li>
+                  <a href="#"><i class="fab fa-twitter t"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google g"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram i"></i></a>
+                </li>
+              </ul>
+            </div>
+    
+          </div>
+          <!--end row-->
+        </div>
+      </footer>
+      <script>
+            mostrar("show");
+
+      </script>
+    
+</body>
+</html>
