@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>D de Donuts</title>
     <link href="https://fonts.googleapis.com/css?family=Mansalva|Titillium+Web:400,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/animations.css">
     <!-- fuentes -->
@@ -27,6 +28,69 @@
           $("body").hide().fadeIn(1000);
       });
     </script>
+    <style>
+        html{
+          scroll-behavior: smooth;
+        }
+        .gotopbtn{
+          position: fixed;
+          width: 50px;
+          height: 50px;
+          background: #7F95D1;
+          bottom: 40px;
+          right: 50px;
+
+          text-decoration: none;
+          text-align: center;
+          line-height: 50px;
+          color: white;
+          font-size: 22px;
+          z-index: 9999;
+          border-radius: 50%;
+        }
+        .gotopbtn:hover{
+            color:#FFC0BE!important;
+        }
+    </style>
+      <script>
+        function get() {
+          recurso = "contactos";//recurso al que quiero acceder
+          
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+              var obj = JSON.parse(this.responseText); 
+            
+            var datosRecibidos = "";
+            for(var i = 0; i < obj.length;i++){
+             datosRecibidos += "<div class='col-lg-3 col-md-6 mb-4'>"+
+                      "<div class='card h-100'>"+
+                        "<img style='transform: scale(0.6);' class='card-img-top' src='"+obj[i].img+"' alt=''>"+
+                        "<div class='card-body'>"+
+                          "<h4 class='card-title'>"+
+                            ""+obj[i].nombre+""+
+                         "</h4>"+
+                          "<h5>"+obj[i].precio+" €</h5>"+
+                          "<p class='card-text'>"+obj[i].descripcion+"</p>"+
+                        "</div>"+
+                         "<div class='card-footer añadir-carro'>"+
+                          "<a href='' onclick=llamar('"+obj[i].nombre+"','"+obj[i].img+"')><small class='text-muted'>Añadir al carro</small></a>"+
+                        "</div>"+
+                      "</div>"+
+                    "</div>";
+            //  "<p>"+"id = "+obj[i].id+", nombre = "+obj[i].nombre+", descripcion = "+obj[i].descripcion+", img = "+"<img src='"+obj[i].img+"'></br>"+"</p>";
+            }
+            
+                document.getElementById("mensaje").innerHTML = datosRecibidos;
+              }
+            };
+            xmlhttp.open("GET", "http://localhost/page/server/" + recurso, true);
+            xmlhttp.send();
+          
+        }
+        
+        
+        </script>
 </head>
 <body>
   
@@ -418,5 +482,6 @@
             $(this).addClass("slideUp");
           });
         </script>-->
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
 </body>
 </html>

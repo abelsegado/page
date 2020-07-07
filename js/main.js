@@ -22,7 +22,9 @@ function añadirCoche(img,name){
     //RECUPERA LOS DATOS DEL ARRAY
     if(localStorage.getItem('myArray') != null){
         array = localStorage.getItem('myArray');
+        console.log(array);
         array = JSON.parse(array);
+        console.log(array);
     }
 
 
